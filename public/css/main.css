@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+:root{
+  --mainBlue:#40ACF1;
+  --transparentBlue:rgba(0, 209, 181, 0.7);
+  --mainWhite:#FFFFFF;
+  --mainBlack:#292F36;
+  --mainGrey:rgb(66, 66, 66);
+  --mainYellow:#e3b505;
+}
+
+
+body{
+  font-family: sans-serif!important;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+}
+.white{
+  color: #FFFFFF;
+}
+.light-white{
+  color: #a8a8a8;
+}
+/* REM values to target root element 1REM = 16px */
+
+
+/* nav-bar */
+.my-nav{
+  padding: 1.3rem;
+}
+.nav-link{
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  color: #FFFFFF!important;
+  transition: .5s all ease;
+}
+.navbar{
+  padding-top:2.5rem;
+
+}
+.nav-link:hover{
+  color: rgb(201, 197, 197)!important;
+}
+header{
+overflow: hidden !important;
+clip-path: polygon(0 0,100% 0,100% 95%,50% 100%,0 95%);
+}
+.height-max{
+  min-height: calc(100vh - 70px);
+  background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5)),url('../img/code-wallpaper-14.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+animation-name: zoom;
+animation-duration: 15s;
+animation-delay: 2s;
+animation-iteration-count: infinite;}
+@keyframes zoom{
+  0%{ transform: scale(1);
+
+  }
+  50%{
+    transform: scale(1.07) translateX(3%);
+
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+.introduce-img{
+  border:1.3rem solid white;
+}
+
+
+/*introduce*/
+.introduce{
+  padding:8rem 0 6rem 0!important;
+}
+.bordet-left{
+border-left: 3px solid white;
+}
+.badge{
+  background: var(--transparentBlue);
+  width: 6rem;
+  font-size: 1rem;
+}
+/*Skills*/
+
+.my-skills
+{
+  border:3px solid var(--transparentBlue);
+  border-radius: .5rem;
+  font-size: 0.8rem;
+  font-weight: 250;
+  background: #292F36;
+}
+.skills-img{
+  border: 5px solid #292F36 ;
+  border-radius: 50%;
+}
+
+/*Specializied Skills*/
+.Title-Shape{
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  background: var(--transparentBlue);
+  font-size: 1.5rem;
+}
+.Specializied-Skills{
+  background: #0c0e11;
+}
+
+.patition-of-Specializied-Skills{
+  background: #292F36;
+  border-radius: 4px;
+  transition: all .5s ease-in;
+}
+.patition-of-Specializied-Skills:hover .p{
+
+ padding-left: 2rem;
+ color: var(--mainBlue)!important;
+}
+.patition-of-Specializied-Skills:hover {
+  background: white;
+  padding-left: 2rem;}
+
+.patition-of-Specializied-Skills:hover .change-color {
+ color: black !important;
+
+}
+.Specializied-Skills-icon{
+  font-size: 1.8rem;
+}
+
+.icon1-color{
+  color: var(--mainBlue);
+}
+.icon2-color{
+  color: rgb(196, 49, 38);
+  font-size: 2rem;
+}
+
+.icon3-color{
+  color: rgb(132, 79, 182);
+}
+/*My Project*/
+.bg-My-Project{
+  background: #0e1013;
+}
+.card-title{
+  background: rgb(1, 194, 168);
+  border-radius: 20%;
+
+}
+/*Progress*/
+.progress-container{
+  background: #0c0e11;
+  clip-path: polygon(0 0,100% 0,100% 95%,50% 100%,0 95%);
+}
+.height-progress{
+
+  height:0.5rem;
+}
+.bg-progress{
+  background: var(--transparentBlue);
+}
+/*Contact*/
+.Contact-bg {
+  background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('../img/استفاده+از+لپ+تاپ.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.btn-info{
+  background: var(--transparentBlue);
+  transition: all 0.1s ease-in;
+}
+
+.btn-info:hover{
+  background: var(--transparentBlue);
+  transform: scale(1.03);
+}
+.container-contant{
+  background: linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.9)),url('../img/Programming-World-Map-Wallpaper.jpg');
+}
+.contact-icon{
+  border: 1px solid var(--transparentBlue);
+  color: #FFFFFF;
+}
+
+.content-contact{
+  background:  #0e1013;
+}
+
+.bg-contact{
+  background: transparent;
+
+}
+.bg-contact::placeholder{
+color: #FFFFFF;
+text-align: center;
+}
+
+.bg-contact:focus{
+  background: transparent;
+  color: white;
+border: 3px solid var(--transparentBlue);
+  box-shadow: none;
+
+}
+.text-box{
+  padding-bottom: 12rem!important;
+  padding-top:2rem!important;
+}
+.btn-contact {
+  background: var(--transparentBlue);
+  border-radius: 5rem;
+  color: #FFFFFF;
+  transition: all 0.1s ease-in;
+}
+.btn-contact:hover{
+  opacity: .8;
+  transform: scale(1.01);
+}
+.txt{
+  padding: 0.85rem;
+}
+
+/*footer*/
+
+
+.bg-footer-icon{
+  background: #0e1013;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 2px dashed var(--transparentBlue);
+  transition: all 1s ease-in;
+}
+.bg-footer-icon:hover{
+  transform: rotate(360deg);
+  cursor: pointer;
+  opacity: 0.92;
+}
+
+.footer-icon{
+  font-size:4.5rem;
+  color: var(--transparentBlue);
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
